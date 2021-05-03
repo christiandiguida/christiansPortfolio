@@ -1,3 +1,6 @@
-<div class="container mt-2">
-  <p>{{ "Server" }} with ID {{ serverId }} is {{ getServerStatus() }}</p>
-</div>
+<p
+  [ngStyle]="{ backgroundColor: getColor() }"
+  [ngClass]="{ online: serverStatus === 'online' }"
+>
+  {{ "Servereeess" }} with ID {{ serverId }} is {{ getServerStatus() }}
+</p>
