@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "directives-Chris": {
+    "directives": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/directives-Chris",
+            "outputPath": "dist/directives",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -21,7 +21,7 @@
             "aot": true,
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "AngularCourse/directives-Chris/node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -59,18 +59,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "directives-Chris:build"
+            "browserTarget": "directives:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "directives-Chris:build:production"
+              "browserTarget": "directives:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "directives-Chris:build"
+            "browserTarget": "directives:build"
           }
         },
         "test": {
@@ -100,16 +100,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "directives-Chris:serve"
+            "devServerTarget": "directives:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "directives-Chris:serve:production"
+              "devServerTarget": "directives:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "directives-Chris"
+  "defaultProject": "directives"
 }
