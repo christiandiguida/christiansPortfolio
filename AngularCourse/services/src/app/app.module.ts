@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NewAccountComponent } from './new-account/new-account.component';
 import { AppComponent } from './app.component';
-import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
-import { BetterHighlightDirective } from './directives/better-highlight.directive';
+import { AccountComponent } from './account/account.component';
 
 @NgModule({
-  declarations: [AppComponent, BasicHighlightDirective, BetterHighlightDirective],
+  declarations: [AppComponent, NewAccountComponent, AccountComponent],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],
